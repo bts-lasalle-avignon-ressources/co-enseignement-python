@@ -2055,7 +2055,7 @@ Python dispose d'un module `re` qui permet de manipuler des expressions rationne
 
 Une expression rationnelle est une suite de caractères qu'on appelle plus simplement motif (_pattern_) pour trouver une correspondance (_match_). On les utilise dans le cadre d'une recherche ou d'un remplacement de texte. Les mécanismes de base pour former un motif sont basés sur des caractères spéciaux de substitution, de groupement et de quantification.
 
-> Lire : [fr.wikipedia.org](https://fr.wikipedia.org/wiki/Expression_régulière)
+> Lire : [Expression régulière](https://fr.wikipedia.org/wiki/Expression_régulière)
 
 Exemple : un fichier texte contenant des numéros de téléphone
 
