@@ -758,7 +758,9 @@ On peut aussi créer un [dictionnaire](#les-dictionnaires) en compréhension :
 
 ### Les tuples
 
-Les objets `tuple` sont des listes non modifiables d’objets hétérogènes.
+> cf. les [tuples](https://docs.python.org/fr/3.13/tutorial/datastructures.html#tuples-and-sequences) `()`
+
+Les objets `tuple` (_n_-uplet) sont des listes non modifiables d’objets hétérogènes (différentes valeurs séparées par des virgules) :
 
 ```python
 # coding: utf-8
