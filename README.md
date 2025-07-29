@@ -647,13 +647,7 @@ while condition:
 
 > **TANT QUE** (`while`) la `condition` est **VRAI** (`True`), on reste dans la boucle.
 
-Pour quitter immédiatement une boucle « tant que » ou une boucle « pour », on utilise l’instruction `break`.
-
-```python
-```
-
-```python
-```
+Pour quitter immédiatement une boucle « tant que » (`while`) ou une boucle « pour » (`for`), on peut utiliser l’instruction `break`.
 
 ### Les listes
 
