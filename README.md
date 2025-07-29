@@ -651,6 +651,8 @@ Pour quitter immédiatement une boucle « tant que » (`while`) ou une boucle «
 
 ### Les listes
 
+> cf. les [listes](https://docs.python.org/fr/3.13/library/stdtypes.html#list) `[]`
+
 Une liste est une collection ordonnée d'éléments (entiers, flottants, chaînes de caractères, ...) séparés par des virgules et mis entre crochets.
 
 > Les listes sont de simples suites d’éléments indexés (à partir de `0` et les indices négatifs sont autorisés). Dans les listes, les éléments qui se suivent ne sont pas nécessairement de même type. Contrairement aux chaînes de caractères, les listes sont des séquences modifiables.
