@@ -401,7 +401,7 @@ On rencontre deux catégories de copies (`import copy`) pour les objets muables 
 
 ### Les chaînes de caractère
 
-Lien : [https://docs.python.org/3/library/stdtypes.html](https://docs.python.org/3/library/stdtypes.html)
+> cf. le type [str](https://docs.python.org/fr/3.13/library/stdtypes.html#text-sequence-type-str) `''` ou `""`
 
 Les données textuelles en Python sont manipulées avec des objets [str](https://docs.python.org/fr/3/library/stdtypes.html#textseq) ou _strings_. Les chaînes sont des **[séquences](https://docs.python.org/fr/3/library/stdtypes.html#typesseq)** (comme les listes) **immuables** de code [Unicode](https://fr.wikipedia.org/wiki/Unicode).
 
