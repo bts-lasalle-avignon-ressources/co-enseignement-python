@@ -805,7 +805,7 @@ print x, y # 2 1
 
 > cf. les [dictionnaires](https://docs.python.org/fr/3.13/tutorial/datastructures.html#dictionaries) `{}`
 
-Les objets `dict` sont des tableaux associatifs (ou dictionnaires) permettant d’associer un objet (une clé) à un autre (une valeur), le tout embrassé par des accolades `{ }`. La clé est la valeur sont associées par un `:` et les membres se suivent, séparés par des virgules `,` comme dans des listes.
+Les objets `dict` sont des tableaux associatifs (ou dictionnaires) muables permettant d’associer un objet (une clé) à un autre (une valeur), le tout embrassé par des accolades `{ }`. La clé est la valeur sont associées par un `:` et les membres se suivent, séparés par des virgules `,` comme dans des listes.
 
 > L’utilisation d’un dictionnaire est en particulier utile lorsque les clés sont des mots qui permettent ainsi d’avoir une approche sémantique des données.
 
