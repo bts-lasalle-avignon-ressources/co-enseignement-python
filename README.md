@@ -172,9 +172,9 @@ Les types de base en Python sont relativement complets et puissants, il y a entr
 
 > Ceci est important et il ne fait aucun mal de le souligner : en Python tout est **objet**. Les chaînes sont des objets. Les listes sont des objets. Les fonctions sont des objets. Même les modules sont des objets.
 
-En Python, on distingue deux types d’objets : les **mutables** (`list`, `dict`, `set`, ...) et les **non mutables** (`str`, `int`, `float`, `tuple`, ...).
+En Python, on distingue deux types d’objets : les muables ou **mutable** (`list`, `dict`, `set`, ...) et les immuables ou **immutable** (`str`, `int`, `float`, `tuple`, ...).
 
-Les mutables sont ceux qu’on peut modifier après leur création. Les non mutables (immuable) sont ceux qu’on ne peut pas modifier après création.
+> Les muables (_mutable_) sont ceux qu’on peut modifier après leur création. Les immuables (_immutable_) sont ceux qu’on ne peut pas modifier après création.
 
 ```python
 # attention les chaînes de caractères ne sont pas modifiables même avec l'opérateur []
@@ -390,7 +390,7 @@ Les types de base des conteneurs dans Python sont :
 - `list` : Listes, structures de données muable (_mutable_). Les indices des listes contenant $n$ éléments sont numérotés de $0$ à $n–1$ (idem pour les tuples et les chaînes de caractères)
 - `tuple` : Tuples, structuress indicées immuables (_immutable_). On peut créer un tuple avec ou sans parenthèses.
 `deque` : Deques (« dèque »), structures de données muable (_mutable_) qui généralise le fonctionnement des **piles** (**LIFO**, _Last In First Out_) et des **files** (**FIFO**, _First In First Out_)
-- `dict` : Dictionnaires,
+- `dict` : Dictionnaires, structures de données muable (_mutable_) ou tableaux associatifs
 
 > Un **conteneur** (_container_) est un objet qui contient d’autres objets (une collection d’objets). Il fournit un moyen de gérer les objets contenus (au minimum ajout, suppression, parfois insertion, tri, recherche, ...) ainsi qu’un accès à ces objets.
 
@@ -1445,7 +1445,7 @@ print(liste)                                    # [1, 2, 3, 4, 5]
 print "Référence de liste : %d" % id(liste)     # Référence de liste : 140660673366712
 ```
 
-Évidemment, cela dépendra si l’objet passé en argument est mutable ou non.
+Évidemment, cela dépendra si l’objet passé en argument est _mutable_ ou non.
 
 ### Gestion des exceptions
 
