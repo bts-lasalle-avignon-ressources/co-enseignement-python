@@ -56,6 +56,13 @@
   - [Bibliothèques](#bibliothèques)
     - [NumPy](#numpy)
     - [Matplotlib](#matplotlib)
+      - [Nuage de points](#nuage-de-points)
+      - [Diagramme en bâtons](#diagramme-en-bâtons)
+      - [Histogramme](#histogramme)
+      - [Boîte à moustache](#boîte-à-moustache)
+      - [Tracé avec des barres d'erreur](#tracé-avec-des-barres-derreur)
+      - [slider](#slider)
+      - [Animation](#animation)
     - [Seaborn](#seaborn)
     - [SciPy](#scipy)
     - [pandas](#pandas)
@@ -3077,7 +3084,7 @@ plt.show()
 | boxplot(X)                 | boîte à moustache                                        |
 | errorbar(x, y, yerr, xerr) | comme plot(x, y) mais avec des barres d'erreur associées |
 
-Nuage de points :
+#### Nuage de points
 
 Chaque couple de réels $(x_i,y_i)$ définit un point $M_{i}$ de coordonnées $(x_i,y_i)$. L'ensemble de ces points s'appelle un **nuage de points**.
 
@@ -3108,7 +3115,7 @@ plt.show()
 
 ![](./images/scatter.png)
 
-Diagramme en bâtons :
+#### Diagramme en bâtons
 
 Le **diagramme en bâtons** permet de visualiser les effectifs (ou les fréquences) associés à chaque valeur de la variable.
 
@@ -3145,7 +3152,7 @@ plt.show()
 
 ![](./images/bar.png)
 
-Histogramme :
+#### Histogramme
 
 L’[histogramme](https://fr.wikipedia.org/wiki/Histogramme) d’un échantillon est un diagramme constitué de barres verticales juxtaposées, chacune de ces barres représentant le nombre de termes de l’échantillon appartenant à une classe donnée. Pour représenter un histogramme d’un échantillon d’une loi réelle, on commence donc par répartir cet échantillon en classes, chacune de ces classes correspondant aux valeurs appartenant à un certain intervalle de R, et on représente cette classe par un rectangle vertical dont l’aire est proportionnelle à l’effectif de la classe. On normalise souvent ces aires de façon à ce que l’aire totale soit égale à 1.
 
@@ -3164,8 +3171,6 @@ ${\displaystyle K=2\cdot N^{\frac {1}{3}}}$
 - règle de la racine carrée :
 
 ${\displaystyle K={\sqrt {N}}}$
-
-Boîte à moustache :
 
 ```python
 import matplotlib.pyplot as plt
@@ -3192,14 +3197,38 @@ plt.show()
 
 ![](./images/hist.png)
 
-Tracé avec des barres d'erreur :
+#### Boîte à moustache
+
+La méthode `plt.boxplot()` de la bibliothèque [Matplotlib](https://matplotlib.org/) en Python est utilisée pour créer des diagrammes en boîte, également connus sous le nom de [boîtes à moustaches](https://fr.wikipedia.org/wiki/Bo%C3%AEte_%C3%A0_moustaches).
+
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Boite_a_moustaches_d4.svg/320px-Boite_a_moustaches_d4.svg.png)
+
+> Les diagrammes en boîte sont couramment utilisés pour visualiser la distribution des données (médiane, quartiles, ...) et pour identifier les valeurs aberrantes (_outliers_). Par défaut sous matplotlib, les extrémités (_caps_) des moustaches (_whiskers_) sont placées à $Q1 - 1.5 \times IQR$ et $Q3 + 1.5 \times IQR$
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+
+nb_mesures = np.arange(10)
+y = np.random.normal(7.2, 0.1, size=len(nb_mesures))
+
+plt.boxplot(y)
+plt.ylim(min(y) - 0.2, max(y) + 0.2)
+plt.title("Boîte à moustache")
+plt.ylabel("pH")
+plt.grid(True)
+plt.show()
+```
+
+![](./images/boxplot.png)
+
+#### Tracé avec des barres d'erreur
 
 Pour tracer des données avec des barres d’erreur en Python, on peut utiliser la fonction `plt.errorbar()` de la bibliothèque [Matplotlib](https://matplotlib.org/) :
 
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
-import scipy.interpolate as interpolate
 
 # des données
 nb_mesures = x = np.arange(10)
@@ -3218,6 +3247,8 @@ plt.show()
 ```
 
 ![](./images/errorbar.png)
+
+#### slider
 
 Tracé avec des _sliders_ (un exemple de [Python pour la physique-chimie](https://python.david-therincourt.fr/)) :
 
@@ -3270,7 +3301,9 @@ plt.show()
 
 ![](./images/sliders.png)
 
-Animation (un exemple de [Python pour la physique-chimie](https://python.david-therincourt.fr/)) :
+#### Animation
+
+Un exemple de [Python pour la physique-chimie](https://python.david-therincourt.fr/) :
 
 ```python
 # Cet exemple propose une animation de la propagation d'un onde sinusoïdal à partir de sa période temporelle T et de sa célérité c
