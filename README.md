@@ -749,6 +749,13 @@ print(matrice)  # [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
 
 > Ici, on n'a pas besoin de variable pour la boucle et pour cela on utilise l'écriture `_` (_underscore_) qui est ici une variable "jetable" (_throwaway variable_). Attention, `_` (_underscore_) a plusieurs usages spécifiques qui dépendend du contexte dans lequel il est utilisé.
 
+On peut aussi créer un [dictionnaire](#les-dictionnaires) en compréhension :
+
+```python
+>>> {x: x**2 for x in (2, 4, 6)}
+{2: 4, 4: 16, 6: 36}
+```
+
 ### Les tuples
 
 Les objets `tuple` sont des listes non modifiables d’objets hétérogènes.
@@ -881,6 +888,13 @@ cles = ['nom', 'prenom', 'age']
 valeurs = ['Durand', 'Jean', 30]
 dictionnaire3 = dict(zip(cles, valeurs))
 print(dictionnaire3)
+```
+
+Créer un dictionnaire en compréhension :
+
+```python
+>>> {x: x**2 for x in (2, 4, 6)}
+{2: 4, 4: 16, 6: 36}
 ```
 
 ### Les ensembles
