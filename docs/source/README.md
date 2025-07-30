@@ -14,34 +14,41 @@ Cette partie présente les éléments essentiels à connaître sur le langage Py
 
 Python est un langage de programmation interprété. Il permet la programmation orientée objet. Il est doté d’un typage dynamique fort, d’une gestion automatique de la mémoire par ramasse-miettes et d’un système de gestion d’exceptions.
 
-> En 1989, profitant d’une semaine de vacances durant les fêtes de Noël, le programmeur Guido van Rossum utilise son ordinateur personnel pour écrire la première version du langage. Fan de la série télévisée Monty Python’s Flying Circus, il décide de baptiser ce projet Python. La première version publique (numéroté 0.9.0) date de février 1991. Guido van Rossum est le principal auteur de Python, et son rôle de décideur central permanent est reconnu avec humour par le titre de « Dictateur bienveillant à vie ».
+````{sidebar} **Python ?**
+En 1989, profitant d’une semaine de vacances durant les fêtes de Noël, le programmeur Guido van Rossum utilise son ordinateur personnel pour écrire la première version du langage. Fan de la série télévisée _Monty Python’s Flying Circus_ ([Monty Python](https://fr.wikipedia.org/wiki/Monty_Python)), il décide de baptiser ce projet **Python**. La première version publique (numéroté 0.9.0) date de février 1991. Guido van Rossum est le principal auteur de Python, et son rôle de décideur central permanent est reconnu avec humour par le titre de « Dictateur bienveillant à vie ».
+````
 
 Le langage Python est placé sous une licence libre et fonctionne sur la plupart des plates-formes informatiques (Windows, Unix, GNU/Linux, macOS, Android, iOS, ...).
 
-> CPython est l’implémentation de référence du langage Python. C’est un interpréteur de _bytecode_ écrit en langage C. C’est un logiciel libre.
+:::{note}
+CPython est l’implémentation de référence du langage Python. C’est un interpréteur de _bytecode_ écrit en langage C. C’est un logiciel libre.
+:::
 
 Python est un langage qui peut s’utiliser dans de nombreux contextes et s’adapter à tout type d’utilisation grâce à des bibliothèques spécialisées. Il est cependant particulièrement utilisé comme langage de script pour automatiser des tâches simples mais fastidieuses. Il est particulièrement répandu dans le monde scientifique, et possède de nombreuses bibliothèques optimisées destinées au calcul numérique (notamment dans la _data science_). Python est aussi utilisé comme langage de programmation dans l’enseignement élémentaire et supérieur, notamment en France.
 
-> Le Zen de Python est un ensemble de 19 principes qui influencent le design du langage de programmation Python, et sont utiles pour comprendre et utiliser le langage : https://fr.wikipedia.org/wiki/Zen_de_Python
+:::{tip}
+Le [Zen de Python](https://fr.wikipedia.org/wiki/Zen_de_Python) est un ensemble de 19 principes qui influencent le _design_ du langage de programmation Python, et sont utiles pour e comprendre et l'utiliser.
+:::
 
 Le langage Python est un des langages les plus populaires actuellement (indice [TIOBE](https://www.tiobe.com/tiobe-index/)).
 
-> Langages proches : Perl, Ruby, Scheme, Smalltalk et Tcl.
+:::{seealso}
+Langages proches : Perl, Ruby, Scheme, Smalltalk et Tcl.
+:::
 
 ### Ressources officielles
 
-- Site officiel : https://www.python.org
-- Documentation Python 3 : https://docs.python.org/fr/3/
-- Le tutoriel Python 3 : https://docs.python.org/fr/3/tutorial/
+- Site officiel : [https://www.python.org](https://www.python.org)
+- Documentation Python 3 : [https://docs.python.org/fr/3/](https://docs.python.org/fr/3/)
+- Le tutoriel Python 3 : [https://docs.python.org/fr/3/tutorial/](https://docs.python.org/fr/3/tutorial/)
 - Ressource non officielle : [Python Notes for Professionals](./ressources/PythonNotesForProfessionals.pdf) (pdf)
 
 > Deux versions du langage Python ont longtemps cohabité : la version 2 (appelé _python legacy_) et la version 3. L’annonce de la fin de Python 2 pour le 31 décembre 2019 va définitivement accélérer le processus de migration vers la version 3.
 
 Vous pouvez aussi obtenir facilement des informations sur tout objet, module ou fonction en utilisant l’interpréteur Python avec les fonctions `dir(object)`, `help(object)` ou encore les docstrings avec l’attribut `__doc__`.
 
-Par exemple pour le type `str` :
-
-```python
+```{code-block} python
+:caption: Exemple pour le type str
 # code pour obtenir des informations sur les string :
 
 # dir([object]) retourne la liste des attributs de l'objet object :
@@ -2138,7 +2145,7 @@ Cette partie présente les éléments essentiels à connaître pour programmer e
 
 ### Ubuntu
 
-Programmer en Python sous Ubuntu : https://doc.ubuntu-fr.org/python
+Programmer en Python sous Ubuntu : [https://doc.ubuntu-fr.org/python](https://doc.ubuntu-fr.org/python)
 
 > Par défaut, Python est installé sur GNU/Linux. Sinon, il faut au moins : `$ sudo apt install python python3-pip python3-venv`
 
@@ -2236,9 +2243,9 @@ $ python3 helloworld.py
 
 ### Windows
 
-> Téléchargement pour Windows: https://www.python.org/downloads/windows/
+> Téléchargement pour Windows: [https://www.python.org/downloads/windows/](https://www.python.org/downloads/windows/)
 
-Documentation : https://docs.python.org/fr/3/using/windows.html
+Documentation : [https://docs.python.org/fr/3/using/windows.html](https://docs.python.org/fr/3/using/windows.html)
 
 ### Visual Studio Code (VSCode)
 
@@ -2321,8 +2328,8 @@ $ virtualenv <mon_environnement_virtuel>
 
 Liens :
 
-- Installation : https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html
-- Documentation : https://docs.conda.io/projects/conda/en/latest/index.html
+- Installation : [https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html](https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html)
+- Documentation : [https://docs.conda.io/projects/conda/en/latest/index.html](https://docs.conda.io/projects/conda/en/latest/index.html)
 
 Dans VSCode, avec la palette de commandes (Ctrl-Shift-P) :
 
@@ -2336,7 +2343,7 @@ Dans VSCode, avec la palette de commandes (Ctrl-Shift-P) :
 
 ### Guide des bonnes pratiques
 
-Le Zen de Python est un ensemble de 19 principes qui influencent le design du langage de programmation Python, et sont utiles pour comprendre et utiliser le langage : https://fr.wikipedia.org/wiki/Zen_de_Python
+Le [Zen de Python](https://fr.wikipedia.org/wiki/Zen_de_Python) est un ensemble de 19 principes qui influencent le design du langage de programmation Python, et sont utiles pour le comprendre et l'utiliser.
 
 [PEP](https://fr.wikipedia.org/wiki/Python_(langage)#Les_PEP) 8 (_Python Enhancement Proposal_ 8) est un guide des directives et des meilleures pratiques pour écrire du code Python.
 
@@ -2354,17 +2361,17 @@ Il existe de nombreux sites web qui fournissent des EDI (Environnement de Dével
 
 Quelques sites :
 
-- basthon : https://basthon.fr/
-- https://www.tutorialspoint.com/execute_python3_online.php
-- https://python-fiddle.com/
-- Try It Online : https://tio.run/#python3
-- Et aussi Visual Studio Code Online : https://vscode.dev/
+- basthon : [https://basthon.fr/](https://basthon.fr/)
+- [https://www.tutorialspoint.com/execute_python3_online.php](https://www.tutorialspoint.com/execute_python3_online.php)
+- [https://python-fiddle.com/](https://python-fiddle.com/)
+- Try It Online : [https://tio.run/#python3](https://tio.run/#python3)
+- Et aussi Visual Studio Code Online : [https://vscode.dev/](https://vscode.dev/)
 
 ## Gestionnaire de paquet pip
 
 [pip](https://pip.pypa.io/) est un gestionnaire de paquets utilisé pour installer et gérer des paquets écrits en Python. De nombreux paquets peuvent être trouvés sur le dépôt [Python Package Index](https://pypi.org/).
 
-Lien : https://pip.pypa.io/
+Lien : [https://pip.pypa.io/](https://pip.pypa.io/)
 
 Version :
 
@@ -2409,7 +2416,7 @@ $ python -m pip freeze > requirements.txt
 
 Cette partie présente les principaux modules Python utilisés lors des séances de Co-enseignement de Mathématiques et Sciences Physiques (BTS CIEL).
 
-> Voir aussi : https://www.tresfacile.net/top-75-meilleurs-modules-et-bibliotheques-python/
+> Voir aussi : [https://www.tresfacile.net/top-75-meilleurs-modules-et-bibliotheques-python/](https://www.tresfacile.net/top-75-meilleurs-modules-et-bibliotheques-python/)
 
 Importer un module :
 
@@ -2511,7 +2518,7 @@ Le module [statistics](https://docs.python.org/3/library/statistics.html) est un
 
 ![](images/fonctions-statistics.png)
 
-Documentation : https://docs.python.org/fr/3/library/statistics.html
+Documentation : [https://docs.python.org/fr/3/library/statistics.html](https://docs.python.org/fr/3/library/statistics.html)
 
 ```python
 import statistics
@@ -2628,6 +2635,8 @@ import pandas as pd
 df = pd.read_csv("./donnees/tmin-tmax-avignon-12-2024.csv")
 ```
 
+> Le fichier [./donnees/tmin-tmax-avignon-12-2024.csv](./donnees/tmin-tmax-avignon-12-2024.csv)
+
 ### hashlib
 
 Le module [hashlib](https://docs.python.org/fr/3.8/library/hashlib.html) implémente une interface commune à différents [algorithmes de hachage](https://fr.wikipedia.org/wiki/Fonction_de_hachage) sécurisés : SHA1, SHA224, SHA256, SHA384, SHA512 et MD5 de RSA (défini par la RFC 1321).
@@ -2732,7 +2741,7 @@ Voir [Les expressions régulières](#les-expressions-régulières)
 
 Cette partie présente les principales bibliothèques Python utilisées lors des séances de Co-enseignement de Mathématiques et Sciences Physiques (BTS CIEL).
 
-> Voir aussi : https://www.tresfacile.net/top-75-meilleurs-modules-et-bibliotheques-python/
+> Voir aussi : [https://www.tresfacile.net/top-75-meilleurs-modules-et-bibliotheques-python/](https://www.tresfacile.net/top-75-meilleurs-modules-et-bibliotheques-python/)
 
 Importer un module :
 
@@ -2856,9 +2865,9 @@ Pour tracer correctement une fonction, il faut généralement un certain nombre 
 
 Liens :
 
-- https://numpy.org/devdocs/user/index.html
-- https://numpy.org/numpy-tutorials/
-- https://numpy.org/devdocs/reference/index.html
+- [https://numpy.org/devdocs/user/index.html](https://numpy.org/devdocs/user/index.html)
+- [https://numpy.org/numpy-tutorials/](https://numpy.org/numpy-tutorials/)
+- [https://numpy.org/devdocs/reference/index.html](https://numpy.org/devdocs/reference/index.html)
 
 [NumPy](https://numpy.org/) pour les statistiques descriptives :
 
@@ -3302,9 +3311,9 @@ plt.show()
 
 Liens :
 
-- https://matplotlib.org/stable/users/index.html
-- https://matplotlib.org/stable/gallery/index.html
-- https://matplotlib.org/stable/api/index.html
+- [https://matplotlib.org/stable/users/index.html](https://matplotlib.org/stable/users/index.html)
+- [https://matplotlib.org/stable/gallery/index.html](https://matplotlib.org/stable/gallery/index.html)
+- [https://matplotlib.org/stable/api/index.html](https://matplotlib.org/stable/api/index.html)
 
 > [Matplotlib](https://matplotlib.org/) dépend de la bibliothèque [NumPy](https://numpy.org/).
 
@@ -3371,7 +3380,7 @@ serie = pd.Series([3, 5, 7, 8, 8, 9, 10, 11])
 serie.describe()
 
 # Charger les données depuis le fichier CSV
-donnees = pd.read_csv('donnees/nba.csv')
+donnees = pd.read_csv('https://github.com/laxmimerit/All-CSV-ML-Data-Files-Download/raw/refs/heads/master/nba.csv')
 
 # calcule la moyenne
 moyenne = donnees['Salary'].mean()
@@ -3470,6 +3479,8 @@ print(ventes.iloc[0,3])
 print()
 ```
 
+> Le fichier [donnees/ventes-jus-fruit.csv](donnees/ventes-jus-fruit.csv)
+
 Exemple tableau croisé dynamique :
 
 ```python
@@ -3532,7 +3543,7 @@ print(nbaMoyennesSalairesParPosition.sort_values(by = ["Salary"], ascending = [F
 
 [SymPy](https://www.sympy.org/fr/) est une bibliothèque Python open-source déstinée au calcul symbolique. Elle offre de nombreux sous-modules pour effectuer une variété de tâches mathématiques : calcul intégral, matrices, physiques, ...
 
-Lien : https://www.sympy.org/fr/
+Lien : [https://www.sympy.org/fr/](https://www.sympy.org/fr/)
 
 Installation : `pip install sympy`
 
@@ -3951,7 +3962,7 @@ im_flipped = im.transpose(method=Image.FLIP_LEFT_RIGHT)
 # autres : Image.FLIP_TOP_BOTTOM, Image.ROTATE_90, Image.ROTATE_180, Image.ROTATE_270, Image.TRANSPOSE ou Image.TRANSVERSE
 ```
 
-D'autre part, le https://pillow.readthedocs.io/en/stable/reference/ImageFilter.html[module ImageFilter] fournit un ensemble suivant de filtres d'amélioration d'image prédéfinis;
+D'autre part, le [module ImageFilter](https://pillow.readthedocs.io/en/stable/reference/ImageFilter.html) fournit un ensemble suivant de filtres d'amélioration d'image prédéfinis.
 
 La méthode `Image.filter()` :
 
@@ -4064,8 +4075,8 @@ g.view()
 
 Liens :
 
-- https://streamlit.io/
-- https://pypi.org/project/streamlit/
+- [https://streamlit.io/](https://streamlit.io/)
+- [https://pypi.org/project/streamlit/](https://pypi.org/project/streamlit/)
 
 Installation : `pip install streamlit`
 
@@ -4127,7 +4138,7 @@ $ flask run
   * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
 ```
 
-> Documentation : https://flask.palletsprojects.com/
+> Documentation : [https://flask.palletsprojects.com/](https://flask.palletsprojects.com/)
 
 ### Interfaces graphiques (GUI)
 
