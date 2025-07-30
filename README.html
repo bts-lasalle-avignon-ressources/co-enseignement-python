@@ -470,35 +470,40 @@ document.write(`
 <section id="presentation">
 <h3>Présentation<a class="headerlink" href="#presentation" title="Lien vers cette rubrique">#</a></h3>
 <p>Python est un langage de programmation interprété. Il permet la programmation orientée objet. Il est doté d’un typage dynamique fort, d’une gestion automatique de la mémoire par ramasse-miettes et d’un système de gestion d’exceptions.</p>
-<blockquote>
-<div><p>En 1989, profitant d’une semaine de vacances durant les fêtes de Noël, le programmeur Guido van Rossum utilise son ordinateur personnel pour écrire la première version du langage. Fan de la série télévisée Monty Python’s Flying Circus, il décide de baptiser ce projet Python. La première version publique (numéroté 0.9.0) date de février 1991. Guido van Rossum est le principal auteur de Python, et son rôle de décideur central permanent est reconnu avec humour par le titre de « Dictateur bienveillant à vie ».</p>
-</div></blockquote>
+<aside class="sidebar">
+<p class="sidebar-title"><strong>Python ?</strong></p>
+<p>En 1989, profitant d’une semaine de vacances durant les fêtes de Noël, le programmeur Guido van Rossum utilise son ordinateur personnel pour écrire la première version du langage. Fan de la série télévisée <em>Monty Python’s Flying Circus</em> (<a class="reference external" href="https://fr.wikipedia.org/wiki/Monty_Python">Monty Python</a>), il décide de baptiser ce projet <strong>Python</strong>. La première version publique (numéroté 0.9.0) date de février 1991. Guido van Rossum est le principal auteur de Python, et son rôle de décideur central permanent est reconnu avec humour par le titre de « Dictateur bienveillant à vie ».</p>
+</aside>
 <p>Le langage Python est placé sous une licence libre et fonctionne sur la plupart des plates-formes informatiques (Windows, Unix, GNU/Linux, macOS, Android, iOS, …).</p>
-<blockquote>
-<div><p>CPython est l’implémentation de référence du langage Python. C’est un interpréteur de <em>bytecode</em> écrit en langage C. C’est un logiciel libre.</p>
-</div></blockquote>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>CPython est l’implémentation de référence du langage Python. C’est un interpréteur de <em>bytecode</em> écrit en langage C. C’est un logiciel libre.</p>
+</div>
 <p>Python est un langage qui peut s’utiliser dans de nombreux contextes et s’adapter à tout type d’utilisation grâce à des bibliothèques spécialisées. Il est cependant particulièrement utilisé comme langage de script pour automatiser des tâches simples mais fastidieuses. Il est particulièrement répandu dans le monde scientifique, et possède de nombreuses bibliothèques optimisées destinées au calcul numérique (notamment dans la <em>data science</em>). Python est aussi utilisé comme langage de programmation dans l’enseignement élémentaire et supérieur, notamment en France.</p>
-<blockquote>
-<div><p>Le Zen de Python est un ensemble de 19 principes qui influencent le design du langage de programmation Python, et sont utiles pour comprendre et utiliser le langage : https://fr.wikipedia.org/wiki/Zen_de_Python</p>
-</div></blockquote>
+<div class="admonition tip">
+<p class="admonition-title">Astuce</p>
+<p>Le <a class="reference external" href="https://fr.wikipedia.org/wiki/Zen_de_Python">Zen de Python</a> est un ensemble de 19 principes qui influencent le <em>design</em> du langage de programmation Python, et sont utiles pour e comprendre et l’utiliser.</p>
+</div>
 <p>Le langage Python est un des langages les plus populaires actuellement (indice <a class="reference external" href="https://www.tiobe.com/tiobe-index/">TIOBE</a>).</p>
-<blockquote>
-<div><p>Langages proches : Perl, Ruby, Scheme, Smalltalk et Tcl.</p>
-</div></blockquote>
+<div class="admonition seealso">
+<p class="admonition-title">Voir aussi</p>
+<p>Langages proches : Perl, Ruby, Scheme, Smalltalk et Tcl.</p>
+</div>
 </section>
 <section id="ressources-officielles">
 <h3>Ressources officielles<a class="headerlink" href="#ressources-officielles" title="Lien vers cette rubrique">#</a></h3>
 <ul class="simple">
-<li><p>Site officiel : https://www.python.org</p></li>
-<li><p>Documentation Python 3 : https://docs.python.org/fr/3/</p></li>
-<li><p>Le tutoriel Python 3 : https://docs.python.org/fr/3/tutorial/</p></li>
+<li><p>Site officiel : <a class="reference external" href="https://www.python.org">https://www.python.org</a></p></li>
+<li><p>Documentation Python 3 : <a class="reference external" href="https://docs.python.org/fr/3/">https://docs.python.org/fr/3/</a></p></li>
+<li><p>Le tutoriel Python 3 : <a class="reference external" href="https://docs.python.org/fr/3/tutorial/">https://docs.python.org/fr/3/tutorial/</a></p></li>
 <li><p>Ressource non officielle : <a class="reference download internal" download="" href="_downloads/6997cc8d46e45173fecea28a22410759/PythonNotesForProfessionals.pdf"><span class="xref download myst">Python Notes for Professionals</span></a> (pdf)</p></li>
 </ul>
 <blockquote>
 <div><p>Deux versions du langage Python ont longtemps cohabité : la version 2 (appelé <em>python legacy</em>) et la version 3. L’annonce de la fin de Python 2 pour le 31 décembre 2019 va définitivement accélérer le processus de migration vers la version 3.</p>
 </div></blockquote>
 <p>Vous pouvez aussi obtenir facilement des informations sur tout objet, module ou fonction en utilisant l’interpréteur Python avec les fonctions <code class="docutils literal notranslate"><span class="pre">dir(object)</span></code>, <code class="docutils literal notranslate"><span class="pre">help(object)</span></code> ou encore les docstrings avec l’attribut <code class="docutils literal notranslate"><span class="pre">__doc__</span></code>.</p>
-<p>Par exemple pour le type <code class="docutils literal notranslate"><span class="pre">str</span></code> :</p>
+<div class="literal-block-wrapper docutils container" id="id1">
+<div class="code-block-caption"><span class="caption-text">Exemple pour le type str</span><a class="headerlink" href="#id1" title="Lien vers ce code">#</a></div>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># code pour obtenir des informations sur les string :</span>
 
 <span class="c1"># dir([object]) retourne la liste des attributs de l&#39;objet object :</span>
@@ -510,6 +515,7 @@ document.write(`
 <span class="c1"># visualiser les docstrings en appelant le paramètre __doc__ sur un objet :</span>
 <span class="nb">print</span> <span class="nb">str</span><span class="o">.</span><span class="vm">__doc__</span>
 </pre></div>
+</div>
 </div>
 </section>
 <section id="la-syntaxe">
@@ -2478,7 +2484,7 @@ ALAIN 04-42-46-87-12
 <p>Cette partie présente les éléments essentiels à connaître pour programmer en Python.</p>
 <section id="ubuntu">
 <h3>Ubuntu<a class="headerlink" href="#ubuntu" title="Lien vers cette rubrique">#</a></h3>
-<p>Programmer en Python sous Ubuntu : https://doc.ubuntu-fr.org/python</p>
+<p>Programmer en Python sous Ubuntu : <a class="reference external" href="https://doc.ubuntu-fr.org/python">https://doc.ubuntu-fr.org/python</a></p>
 <blockquote>
 <div><p>Par défaut, Python est installé sur GNU/Linux. Sinon, il faut au moins : <code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">sudo</span> <span class="pre">apt</span> <span class="pre">install</span> <span class="pre">python</span> <span class="pre">python3-pip</span> <span class="pre">python3-venv</span></code></p>
 </div></blockquote>
@@ -2573,9 +2579,9 @@ $<span class="w"> </span>./helloworld.py
 <section id="windows">
 <h3>Windows<a class="headerlink" href="#windows" title="Lien vers cette rubrique">#</a></h3>
 <blockquote>
-<div><p>Téléchargement pour Windows: https://www.python.org/downloads/windows/</p>
+<div><p>Téléchargement pour Windows: <a class="reference external" href="https://www.python.org/downloads/windows/">https://www.python.org/downloads/windows/</a></p>
 </div></blockquote>
-<p>Documentation : https://docs.python.org/fr/3/using/windows.html</p>
+<p>Documentation : <a class="reference external" href="https://docs.python.org/fr/3/using/windows.html">https://docs.python.org/fr/3/using/windows.html</a></p>
 </section>
 <section id="visual-studio-code-vscode">
 <h3>Visual Studio Code (VSCode)<a class="headerlink" href="#visual-studio-code-vscode" title="Lien vers cette rubrique">#</a></h3>
@@ -2642,8 +2648,8 @@ $<span class="w"> </span>virtualenv<span class="w"> </span>-h
 <p><a class="reference external" href="https://docs.conda.io/">Conda</a> est un système de gestion de paquets open source et un système de gestion d’environnement permettant d’installer plusieurs versions de paquets logiciels et leurs dépendances, et de passer facilement de l’une à l’autre. Il fonctionne sous Linux, OS X et Windows.</p>
 <p>Liens :</p>
 <ul class="simple">
-<li><p>Installation : https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html</p></li>
-<li><p>Documentation : https://docs.conda.io/projects/conda/en/latest/index.html</p></li>
+<li><p>Installation : <a class="reference external" href="https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html">https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html</a></p></li>
+<li><p>Documentation : <a class="reference external" href="https://docs.conda.io/projects/conda/en/latest/index.html">https://docs.conda.io/projects/conda/en/latest/index.html</a></p></li>
 </ul>
 <p>Dans VSCode, avec la palette de commandes (Ctrl-Shift-P) :</p>
 <ul class="simple">
@@ -2657,7 +2663,7 @@ $<span class="w"> </span>virtualenv<span class="w"> </span>-h
 </section>
 <section id="guide-des-bonnes-pratiques">
 <h3>Guide des bonnes pratiques<a class="headerlink" href="#guide-des-bonnes-pratiques" title="Lien vers cette rubrique">#</a></h3>
-<p>Le Zen de Python est un ensemble de 19 principes qui influencent le design du langage de programmation Python, et sont utiles pour comprendre et utiliser le langage : https://fr.wikipedia.org/wiki/Zen_de_Python</p>
+<p>Le <a class="reference external" href="https://fr.wikipedia.org/wiki/Zen_de_Python">Zen de Python</a> est un ensemble de 19 principes qui influencent le design du langage de programmation Python, et sont utiles pour le comprendre et l’utiliser.</p>
 <p><a class="reference external" href="https://fr.wikipedia.org/wiki/Python_(langage)#Les_PEP">PEP</a> 8 (<em>Python Enhancement Proposal</em> 8) est un guide des directives et des meilleures pratiques pour écrire du code Python.</p>
 <p>PEP 8 recommande d’utiliser des mots en minuscules séparés par des traits de soulignement <code class="docutils literal notranslate"><span class="pre">_</span></code> pour nommer les fonctions. C’est donc la convention <a class="reference external" href="https://bts-lasalle-avignon-tp.github.io/guides-developpement-logiciel/guide-programmation-btssn.html#_snake_case">snake_case</a> qui s’applique.</p>
 <p>On peut utiliser « <code class="docutils literal notranslate"><span class="pre">_</span></code> » dans le nom des variables et les fonctions mais pas « <code class="docutils literal notranslate"><span class="pre">-</span></code> ». On fera de même pour les noms de fichiers.</p>
@@ -2671,18 +2677,18 @@ $<span class="w"> </span>virtualenv<span class="w"> </span>-h
 <p>Il existe de nombreux sites web qui fournissent des EDI (Environnement de Développement Intégré) en ligne pour tester du code ou des services : un espace d’apprentissage séparé. Ils permettent aussi d’échanger des exemples.</p>
 <p>Quelques sites :</p>
 <ul class="simple">
-<li><p>basthon : https://basthon.fr/</p></li>
-<li><p>https://www.tutorialspoint.com/execute_python3_online.php</p></li>
-<li><p>https://python-fiddle.com/</p></li>
-<li><p>Try It Online : https://tio.run/#python3</p></li>
-<li><p>Et aussi Visual Studio Code Online : https://vscode.dev/</p></li>
+<li><p>basthon : <a class="reference external" href="https://basthon.fr/">https://basthon.fr/</a></p></li>
+<li><p><a class="reference external" href="https://www.tutorialspoint.com/execute_python3_online.php">https://www.tutorialspoint.com/execute_python3_online.php</a></p></li>
+<li><p><a class="reference external" href="https://python-fiddle.com/">https://python-fiddle.com/</a></p></li>
+<li><p>Try It Online : <a class="reference external" href="https://tio.run/#python3">https://tio.run/#python3</a></p></li>
+<li><p>Et aussi Visual Studio Code Online : <a class="reference external" href="https://vscode.dev/">https://vscode.dev/</a></p></li>
 </ul>
 </section>
 </section>
 <section id="gestionnaire-de-paquet-pip">
 <h2>Gestionnaire de paquet pip<a class="headerlink" href="#gestionnaire-de-paquet-pip" title="Lien vers cette rubrique">#</a></h2>
 <p><a class="reference external" href="https://pip.pypa.io/">pip</a> est un gestionnaire de paquets utilisé pour installer et gérer des paquets écrits en Python. De nombreux paquets peuvent être trouvés sur le dépôt <a class="reference external" href="https://pypi.org/">Python Package Index</a>.</p>
-<p>Lien : https://pip.pypa.io/</p>
+<p>Lien : <a class="reference external" href="https://pip.pypa.io/">https://pip.pypa.io/</a></p>
 <p>Version :</p>
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>python<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>--version
 </pre></div>
@@ -2718,7 +2724,7 @@ $<span class="w"> </span>python<span class="w"> </span>-m<span class="w"> </span
 <h2>Modules<a class="headerlink" href="#modules" title="Lien vers cette rubrique">#</a></h2>
 <p>Cette partie présente les principaux modules Python utilisés lors des séances de Co-enseignement de Mathématiques et Sciences Physiques (BTS CIEL).</p>
 <blockquote>
-<div><p>Voir aussi : https://www.tresfacile.net/top-75-meilleurs-modules-et-bibliotheques-python/</p>
+<div><p>Voir aussi : <a class="reference external" href="https://www.tresfacile.net/top-75-meilleurs-modules-et-bibliotheques-python/">https://www.tresfacile.net/top-75-meilleurs-modules-et-bibliotheques-python/</a></p>
 </div></blockquote>
 <p>Importer un module :</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span>
@@ -2854,7 +2860,7 @@ $<span class="w"> </span>python<span class="w"> </span>-m<span class="w"> </span
 <h3>statistics<a class="headerlink" href="#statistics" title="Lien vers cette rubrique">#</a></h3>
 <p>Le module <a class="reference external" href="https://docs.python.org/3/library/statistics.html">statistics</a> est une bibliothèque intégrée à Python pour les statistiques descriptives.</p>
 <p><img alt="" src="_images/fonctions-statistics.png" /></p>
-<p>Documentation : https://docs.python.org/fr/3/library/statistics.html</p>
+<p>Documentation : <a class="reference external" href="https://docs.python.org/fr/3/library/statistics.html">https://docs.python.org/fr/3/library/statistics.html</a></p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">statistics</span>
 </pre></div>
 </div>
@@ -2983,6 +2989,9 @@ $<span class="w"> </span>python<span class="w"> </span>-m<span class="w"> </span
 <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;./donnees/tmin-tmax-avignon-12-2024.csv&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
+<blockquote>
+<div><p>Le fichier <a class="reference download internal" download="" href="_downloads/51686dba2ddb2e9b43b6b5186039492a/tmin-tmax-avignon-12-2024.csv"><span class="xref download myst">./donnees/tmin-tmax-avignon-12-2024.csv</span></a></p>
+</div></blockquote>
 </section>
 <section id="hashlib">
 <h3>hashlib<a class="headerlink" href="#hashlib" title="Lien vers cette rubrique">#</a></h3>
@@ -3087,7 +3096,7 @@ $<span class="w"> </span>python<span class="w"> </span>-m<span class="w"> </span
 <h2>Bibliothèques<a class="headerlink" href="#bibliotheques" title="Lien vers cette rubrique">#</a></h2>
 <p>Cette partie présente les principales bibliothèques Python utilisées lors des séances de Co-enseignement de Mathématiques et Sciences Physiques (BTS CIEL).</p>
 <blockquote>
-<div><p>Voir aussi : https://www.tresfacile.net/top-75-meilleurs-modules-et-bibliotheques-python/</p>
+<div><p>Voir aussi : <a class="reference external" href="https://www.tresfacile.net/top-75-meilleurs-modules-et-bibliotheques-python/">https://www.tresfacile.net/top-75-meilleurs-modules-et-bibliotheques-python/</a></p>
 </div></blockquote>
 <p>Importer un module :</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span>
@@ -3195,9 +3204,9 @@ $<span class="w"> </span>python<span class="w"> </span>-m<span class="w"> </span
 </ul>
 <p>Liens :</p>
 <ul class="simple">
-<li><p>https://numpy.org/devdocs/user/index.html</p></li>
-<li><p>https://numpy.org/numpy-tutorials/</p></li>
-<li><p>https://numpy.org/devdocs/reference/index.html</p></li>
+<li><p><a class="reference external" href="https://numpy.org/devdocs/user/index.html">https://numpy.org/devdocs/user/index.html</a></p></li>
+<li><p><a class="reference external" href="https://numpy.org/numpy-tutorials/">https://numpy.org/numpy-tutorials/</a></p></li>
+<li><p><a class="reference external" href="https://numpy.org/devdocs/reference/index.html">https://numpy.org/devdocs/reference/index.html</a></p></li>
 </ul>
 <p><a class="reference external" href="https://numpy.org/">NumPy</a> pour les statistiques descriptives :</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
@@ -3649,9 +3658,9 @@ $<span class="w"> </span>python<span class="w"> </span>-m<span class="w"> </span
 <p><img alt="" src="_images/animation.png" /></p>
 <p>Liens :</p>
 <ul class="simple">
-<li><p>https://matplotlib.org/stable/users/index.html</p></li>
-<li><p>https://matplotlib.org/stable/gallery/index.html</p></li>
-<li><p>https://matplotlib.org/stable/api/index.html</p></li>
+<li><p><a class="reference external" href="https://matplotlib.org/stable/users/index.html">https://matplotlib.org/stable/users/index.html</a></p></li>
+<li><p><a class="reference external" href="https://matplotlib.org/stable/gallery/index.html">https://matplotlib.org/stable/gallery/index.html</a></p></li>
+<li><p><a class="reference external" href="https://matplotlib.org/stable/api/index.html">https://matplotlib.org/stable/api/index.html</a></p></li>
 </ul>
 <blockquote>
 <div><p><a class="reference external" href="https://matplotlib.org/">Matplotlib</a> dépend de la bibliothèque <a class="reference external" href="https://numpy.org/">NumPy</a>.</p>
@@ -3731,7 +3740,7 @@ $<span class="w"> </span>python<span class="w"> </span>-m<span class="w"> </span
 <span class="n">serie</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
 
 <span class="c1"># Charger les données depuis le fichier CSV</span>
-<span class="n">donnees</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;donnees/nba.csv&#39;</span><span class="p">)</span>
+<span class="n">donnees</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;https://github.com/laxmimerit/All-CSV-ML-Data-Files-Download/raw/refs/heads/master/nba.csv&#39;</span><span class="p">)</span>
 
 <span class="c1"># calcule la moyenne</span>
 <span class="n">moyenne</span> <span class="o">=</span> <span class="n">donnees</span><span class="p">[</span><span class="s1">&#39;Salary&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
@@ -3843,6 +3852,9 @@ $<span class="w"> </span>python<span class="w"> </span>-m<span class="w"> </span
 <span class="nb">print</span><span class="p">()</span>
 </pre></div>
 </div>
+<blockquote>
+<div><p>Le fichier <a class="reference download internal" download="" href="_downloads/0a625ad5ca7ab40e1e65706e604bf5cb/ventes-jus-fruit.csv"><span class="xref download myst">donnees/ventes-jus-fruit.csv</span></a></p>
+</div></blockquote>
 <p>Exemple tableau croisé dynamique :</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># cet exemple affiche les informations statistiques d&#39;une série en utilisant pandas</span>
 <span class="c1"># tvaira (2023)</span>
@@ -3903,7 +3915,7 @@ $<span class="w"> </span>python<span class="w"> </span>-m<span class="w"> </span
 <section id="sympy">
 <h3>Sympy<a class="headerlink" href="#sympy" title="Lien vers cette rubrique">#</a></h3>
 <p><a class="reference external" href="https://www.sympy.org/fr/">SymPy</a> est une bibliothèque Python open-source déstinée au calcul symbolique. Elle offre de nombreux sous-modules pour effectuer une variété de tâches mathématiques : calcul intégral, matrices, physiques, …</p>
-<p>Lien : https://www.sympy.org/fr/</p>
+<p>Lien : <a class="reference external" href="https://www.sympy.org/fr/">https://www.sympy.org/fr/</a></p>
 <p>Installation : <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">sympy</span></code></p>
 <p>On utilise SymPy notamment pour manipuler des expressions mathématiques.</p>
 <p>Les symboles :</p>
@@ -4300,7 +4312,7 @@ Couleur<span class="w"> </span>:
 <span class="c1"># autres : Image.FLIP_TOP_BOTTOM, Image.ROTATE_90, Image.ROTATE_180, Image.ROTATE_270, Image.TRANSPOSE ou Image.TRANSVERSE</span>
 </pre></div>
 </div>
-<p>D’autre part, le https://pillow.readthedocs.io/en/stable/reference/ImageFilter.html[module ImageFilter] fournit un ensemble suivant de filtres d’amélioration d’image prédéfinis;</p>
+<p>D’autre part, le <a class="reference external" href="https://pillow.readthedocs.io/en/stable/reference/ImageFilter.html">module ImageFilter</a> fournit un ensemble suivant de filtres d’amélioration d’image prédéfinis.</p>
 <p>La méthode <code class="docutils literal notranslate"><span class="pre">Image.filter()</span></code> :</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">PIL</span><span class="w"> </span><span class="kn">import</span> <span class="n">Image</span><span class="p">,</span> <span class="n">ImageFilter</span>
 
@@ -4400,8 +4412,8 @@ $<span class="w"> </span><span class="nb">echo</span><span class="w"> </span><sp
 <p><a class="reference external" href="https://streamlit.io/">Streamlit</a> transforme des scripts Python en applications Web interactives.</p>
 <p>Liens :</p>
 <ul class="simple">
-<li><p>https://streamlit.io/</p></li>
-<li><p>https://pypi.org/project/streamlit/</p></li>
+<li><p><a class="reference external" href="https://streamlit.io/">https://streamlit.io/</a></p></li>
+<li><p><a class="reference external" href="https://pypi.org/project/streamlit/">https://pypi.org/project/streamlit/</a></p></li>
 </ul>
 <p>Installation : <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">streamlit</span></code></p>
 <p>Exemple :</p>
@@ -4453,7 +4465,7 @@ $<span class="w"> </span><span class="nb">echo</span><span class="w"> </span><sp
 </pre></div>
 </div>
 <blockquote>
-<div><p>Documentation : https://flask.palletsprojects.com/</p>
+<div><p>Documentation : <a class="reference external" href="https://flask.palletsprojects.com/">https://flask.palletsprojects.com/</a></p>
 </div></blockquote>
 </section>
 <section id="interfaces-graphiques-gui">
