@@ -1,3 +1,5 @@
+[![Documentation HTML Sphinx](https://github.com/bts-lasalle-avignon-ressources/co-enseignement-python/actions/workflows/sphinx.yml/badge.svg)](https://github.com/bts-lasalle-avignon-ressources/co-enseignement-python/actions/workflows/sphinx.yml) [![pages-build-deployment](https://github.com/bts-lasalle-avignon-ressources/co-enseignement-python/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/bts-lasalle-avignon-ressources/co-enseignement-python/actions/workflows/pages/pages-build-deployment)
+
 # Co-enseignement en Python
 
 Accès : [https://bts-lasalle-avignon-ressources.github.io/co-enseignement-python/](https://bts-lasalle-avignon-ressources.github.io/co-enseignement-python/README.html)
