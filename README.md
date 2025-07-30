@@ -2365,7 +2365,7 @@ deactivate
 
 > Si beoin, supprimer définitivement l'environnement virtuel : `rm -rf chemin_vers_mon_environnement_virtuel`
 
-Il existe des alternatives à [venv](https://docs.python.org/3/library/venv.html) comme [virtualenv](), [pipenv](https://packaging.python.org/en/latest/tutorials/managing-dependencies/) ou [Anaconda](https://anaconda.org/).
+Il existe des alternatives à [venv](https://docs.python.org/3/library/venv.html) comme [virtualenv](https://virtualenv.pypa.io/en/latest/user_guide.html), [pipenv](https://packaging.python.org/en/latest/tutorials/managing-dependencies/) ou [Anaconda](https://anaconda.org/).
 
 [virtualenv](https://virtualenv.pypa.io/en/latest/) est une sur-couche au module [venv](https://docs.python.org/3/library/venv.html).
 
