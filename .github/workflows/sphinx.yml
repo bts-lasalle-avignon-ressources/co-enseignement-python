@@ -41,9 +41,9 @@ jobs:
             ${{ runner.os }}-pip-
 
       - name: Build HTML
-        uses: ammaraskar/sphinx-action@master
+        uses: sphinx-notes/pages@v3
         with:
-          docs-folder: "docs/"
+          publish: false
 
       - name: Upload artifacts
         uses: actions/upload-artifact@v4
