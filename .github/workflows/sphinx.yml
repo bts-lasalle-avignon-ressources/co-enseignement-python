@@ -28,11 +28,22 @@ jobs:
       - name: Install dependencies
         run: python3 -m pip install -r ./docs/requirements.txt
 
+      - name: Get pip cache dir
+        id: pip-cache
+        run: echo "dir=$(pip cache dir)" >> $GITHUB_OUTPUT
+
+      - name: Cache dependencies
+        uses: actions/cache@v4
+        with:
+          path: ${{ steps.pip-cache.outputs.dir }}
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+
       - name: Build HTML
         uses: ammaraskar/sphinx-action@master
         with:
           docs-folder: "docs/"
-          pre-build-command: "/usr/local/bin/python -m pip install --upgrade pip"
 
       - name: Upload artifacts
         uses: actions/upload-artifact@v4
