@@ -19,7 +19,7 @@ jobs:
           publish: false
 
       - run: mkdir -p docs/build/html/
-      - run: cp -r /tmp/sphinxnotes-pages/html/* docs/build/html/
+      - run: cp -r /tmp/sphinxnotes-pages/* docs/build/html/
 
       - name: Upload artifacts
         uses: actions/upload-artifact@v4
