@@ -65,8 +65,8 @@ html_theme = 'sphinx_book_theme'
 html_static_path = ['_static']
 html_title = "Co-enseignement en Python"
 html_theme_options = {
-   "pygment_light_style": "tango",
-   "pygment_dark_style": "monokai",
+   "pygments_light_style": "tango",
+   "pygments_dark_style": "monokai",
     "show_toc_level": 3,
     "repository_url": "https://github.com/bts-lasalle-avignon-ressources/co-enseignement-python",
     #"path_to_docs": "{path-relative-to-site-root}",

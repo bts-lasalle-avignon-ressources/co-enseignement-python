@@ -12,39 +12,14 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: actions/checkout@v4
-        with:
-          persist-credentials: false
-
-      - name: Setup Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.10'
-
-      - name: Upgrade pip
-        run: |
-          python3 -m pip install --upgrade pip
-
-      - name: Install dependencies
-        run: python3 -m pip install -r ./docs/requirements.txt
-
-      - name: Get pip cache dir
-        id: pip-cache
-        run: echo "dir=$(pip cache dir)" >> $GITHUB_OUTPUT
-
-      - name: Cache dependencies
-        uses: actions/cache@v4
-        with:
-          path: ${{ steps.pip-cache.outputs.dir }}
-          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
-          restore-keys: |
-            ${{ runner.os }}-pip-
-
       - name: Build HTML
         uses: sphinx-notes/pages@v3
         with:
           documentation_path: "docs/source"
           publish: false
+
+      - run: mkdir -p docs/build/html/
+      - run: cp -r /tmp/sphinxnotes-pages/html/* docs/build/html/
 
       - name: Upload artifacts
         uses: actions/upload-artifact@v4
