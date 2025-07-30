@@ -1,0 +1,532 @@
+
+<!DOCTYPE html>
+
+
+<html lang="fr" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>&lt;no title&gt; &#8212; Co-enseignement en Python</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="_static/documentation_options.js?v=15ae03cc"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script src="_static/translations.js?v=e6b791cb"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'index';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Recherche" href="search.html" />
+    <link rel="next" title="Co-enseignement en Python" href="README.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="fr"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Passer au contenu principal</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Haut de page</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="#">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">Co-enseignement en Python</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Recherche" aria-label="Recherche" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Recherche</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="README.html">Co-enseignement en Python</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/bts-lasalle-avignon-ressources/co-enseignement-python" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Dépôt source"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/bts-lasalle-avignon-ressources/co-enseignement-python/blob/main/index.rst?plain=1" target="_blank"
+   class="btn btn-sm btn-source-file-button dropdown-item"
+   title="Show source"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-code"></i>
+  </span>
+<span class="btn__text-container">Show source</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/bts-lasalle-avignon-ressources/co-enseignement-python/issues/new?title=Issue%20on%20page%20%2Findex.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Ouvrez un problème"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Téléchargez cette page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/index.rst" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Télécharger le fichier source"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.rst</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Imprimer au format PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Mode plein écran"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="clair/sombre" aria-label="clair/sombre" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Recherche" aria-label="Recherche" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1><no title></h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="README.html">Co-enseignement en Python</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="README.html#le-langage-python">Le langage Python</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="README.html#presentation">Présentation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="README.html#ressources-officielles">Ressources officielles</a></li>
+<li class="toctree-l3"><a class="reference internal" href="README.html#la-syntaxe">La syntaxe</a></li>
+<li class="toctree-l3"><a class="reference internal" href="README.html#le-typage">Le typage</a></li>
+<li class="toctree-l3"><a class="reference internal" href="README.html#ecriture-binaire">Écriture binaire</a></li>
+<li class="toctree-l3"><a class="reference internal" href="README.html#operations-de-base">Opérations de base</a></li>
+<li class="toctree-l3"><a class="reference internal" href="README.html#saisie-au-clavier">Saisie au clavier</a></li>
+<li class="toctree-l3"><a class="reference internal" href="README.html#affichage-a-lecran">Affichage à l’écran</a></li>
+<li class="toctree-l3"><a class="reference internal" href="README.html#conteneurs-de-base">Conteneurs de base</a></li>
+<li class="toctree-l3"><a class="reference internal" href="README.html#les-chaines-de-caractere">Les chaînes de caractère</a></li>
+<li class="toctree-l3"><a class="reference internal" href="README.html#ecriture-formatee-en-python">Écriture formatée en python</a></li>
+<li class="toctree-l3"><a class="reference internal" href="README.html#les-nombres-a-virgule-flottante">Les nombres à virgule flottante</a></li>
+<li class="toctree-l3"><a class="reference internal" href="README.html#instructions-conditionnelles">Instructions conditionnelles</a></li>
+<li class="toctree-l3"><a class="reference internal" href="README.html#instructions-iteratives">Instructions itératives</a></li>
+<li class="toctree-l3"><a class="reference internal" href="README.html#les-listes">Les listes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="README.html#comprehension-de-liste">Compréhension de liste</a></li>
+<li class="toctree-l3"><a class="reference internal" href="README.html#les-tuples">Les tuples</a></li>
+<li class="toctree-l3"><a class="reference internal" href="README.html#les-dictionnaires">Les dictionnaires</a></li>
+<li class="toctree-l3"><a class="reference internal" href="README.html#les-ensembles">Les ensembles</a></li>
+<li class="toctree-l3"><a class="reference internal" href="README.html#les-tableaux-a-n-dimensions">Les tableaux à N dimensions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="README.html#les-matrices">Les matrices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="README.html#autres-conteneurs">Autres conteneurs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="README.html#ramasse-miettes">Ramasse-miettes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="README.html#les-fonctions">Les fonctions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="README.html#notions-de-reference">Notions de référence</a></li>
+<li class="toctree-l3"><a class="reference internal" href="README.html#gestion-des-exceptions">Gestion des exceptions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="README.html#les-assertions">Les assertions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="README.html#classes-et-objets-poo">Classes et Objets (POO)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="README.html#les-modules-et-les-packages">Les modules et les packages</a></li>
+<li class="toctree-l3"><a class="reference internal" href="README.html#main"><code class="docutils literal notranslate"><span class="pre">__main__</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="README.html#debug"><code class="docutils literal notranslate"><span class="pre">__debug__</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="README.html#les-fichiers">Les fichiers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="README.html#les-expressions-regulieres">Les expressions régulières</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="README.html#programmer-en-python">Programmer en Python</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="README.html#ubuntu">Ubuntu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="README.html#windows">Windows</a></li>
+<li class="toctree-l3"><a class="reference internal" href="README.html#visual-studio-code-vscode">Visual Studio Code (VSCode)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="README.html#environnement-virtuel">Environnement virtuel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="README.html#guide-des-bonnes-pratiques">Guide des bonnes pratiques</a></li>
+<li class="toctree-l3"><a class="reference internal" href="README.html#bac-a-sable-et-developpement-en-ligne">Bac à sable et développement en ligne</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="README.html#gestionnaire-de-paquet-pip">Gestionnaire de paquet pip</a></li>
+<li class="toctree-l2"><a class="reference internal" href="README.html#modules">Modules</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="README.html#math">math</a></li>
+<li class="toctree-l3"><a class="reference internal" href="README.html#random">random</a></li>
+<li class="toctree-l3"><a class="reference internal" href="README.html#fractions">fractions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="README.html#statistics">statistics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="README.html#json">JSON</a></li>
+<li class="toctree-l3"><a class="reference internal" href="README.html#csv">CSV</a></li>
+<li class="toctree-l3"><a class="reference internal" href="README.html#hashlib">hashlib</a></li>
+<li class="toctree-l3"><a class="reference internal" href="README.html#codecs">codecs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="README.html#base64">base64</a></li>
+<li class="toctree-l3"><a class="reference internal" href="README.html#re">re</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="README.html#bibliotheques">Bibliothèques</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="README.html#numpy">NumPy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="README.html#matplotlib">Matplotlib</a></li>
+<li class="toctree-l3"><a class="reference internal" href="README.html#seaborn">Seaborn</a></li>
+<li class="toctree-l3"><a class="reference internal" href="README.html#scipy">SciPy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="README.html#pandas">pandas</a></li>
+<li class="toctree-l3"><a class="reference internal" href="README.html#sympy">Sympy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="README.html#opencv">OpenCV</a></li>
+<li class="toctree-l3"><a class="reference internal" href="README.html#pillow-pil">Pillow (PIL)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="README.html#graphviz">Graphviz</a></li>
+<li class="toctree-l3"><a class="reference internal" href="README.html#streamlit">Streamlit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="README.html#flask">Flask</a></li>
+<li class="toctree-l3"><a class="reference internal" href="README.html#interfaces-graphiques-gui">Interfaces graphiques (GUI)</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="README.html#tester-les-exercices-de-github-classroom">Tester les exercices de GitHub Classroom</a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="right-next"
+       href="README.html"
+       title="page suivante">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">suivant</p>
+        <p class="prev-next-title">Co-enseignement en Python</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+Par Thierry Vaira <thierry.vaira@gmail.com>
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright BTS LaSalle Avignon - 2025.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
