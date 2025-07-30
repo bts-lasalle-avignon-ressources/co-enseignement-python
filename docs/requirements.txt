@@ -1,12 +1,2 @@
-Pygments==2.19.1
-myst-parser
 Sphinx
-sphinx-basic-ng
 sphinx-book-theme
-sphinxcontrib-applehelp
-sphinxcontrib-devhelp
-sphinxcontrib-htmlhelp
-sphinxcontrib-jquery
-sphinxcontrib-jsmath
-sphinxcontrib-qthelp
-sphinxcontrib-serializinghtml
