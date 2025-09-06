@@ -52,13 +52,13 @@ Vous pouvez aussi obtenir facilement des informations sur tout objet, module ou 
 # code pour obtenir des informations sur les string :
 
 # dir([object]) retourne la liste des attributs de l'objet object :
-print dir(str)
+print(dir(str))
 
 # help([object]) invoque le système d'aide intégré :
 help(str)
 
 # visualiser les docstrings en appelant le paramètre __doc__ sur un objet :
-print str.__doc__
+print(str.__doc__)
 ```
 
 ### La syntaxe
